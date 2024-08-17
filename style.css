@@ -426,7 +426,7 @@
 
 
 
-/* the styling for the container div starts here */
+/* the styling for the conversions div starts here */
 .conversions{
         max-width: 100%;
         min-height: 80vh;
@@ -463,6 +463,88 @@
 .card-text{
     text-align:start!important;
 }
+/* the styling for the template section div ends here */
+
+
+
+
+/* styling for the web-platforms*/
+.web-platforms {
+    margin-top: 4%;
+    max-width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
+    /* border-radius: 5px; */
+}
+
+.section {
+    border-radius: 5%;
+    max-width: 100%;
+    background-color: #EEF1F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 40%;
+}
+
+.content h1 {
+    margin-top: 1em;
+}
+
+.list {
+    text-transform: capitalize;
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.check {
+    padding-right: 10px;
+}
+
+/* media quesries for integration */
+@media only screen and (max-width: 1000px) {
+
+    .section {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .section .cont {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:545px){
+    .banner img{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width:455px){
+    .banner img{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .banner img{
+        width: 300px;
+    }
+}
+
+/* media queries for web-platform closes here */
+
+
+
 
 /* styling for the features services starts here */
 
@@ -486,29 +568,24 @@
 
 /* styling for video section starts here */
 
-.seceight{
+.love-story{
     max-width: 100%;
     min-height: 35vh;
     padding: 2em;
     display: flex;
     justify-content: center;
+    background-color: #0c0c1c;
 }
 
-.sec8part1{
+.story-content{
       max-width: 100%;
-      height: 100%;
-      background-color: #0c0c1c;
+      min-height: 35vh;  
       border-radius: 7px;
       color: #ffffff;
       padding: 0.7em;
-      display: flex;
-      justify-content: space-between;
+
 }
 
-.sec8part2{
-    width: 50%;
-    
-}
 
 .video{
     width: 400px;
@@ -516,11 +593,12 @@
     margin-left: 2em;
 }
 
-.headi{
+.heading{
     margin-top:1.6em ;
     margin-left: 2em;
 }
 
+/* styling for the video section ends here */
 @media only screen and (max-width:966px){
     .video{
         width: 400px;
@@ -544,7 +622,7 @@
 }
 
 @media only screen and (max-width:725px){
-    .sec8part1{
+    .story-content{
         flex-direction: column;
     }
 
@@ -553,7 +631,7 @@
         margin-left: 0;
     }
 
-    .sec8part2{
+    .story-video{
         width: 100%;
         
     }
@@ -561,6 +639,49 @@
 }
 
 /* media quesries for the video section ends here */
+
+
+/* the styling for the review div starts here */
+
+.review{
+    max-width: 100%;
+    min-height: 70vh;
+    /* background-color: pink; */
+}
+
+.review-icon{
+   display: flex;
+   margin-top: 2px;
+   margin-bottom: 2px;
+}
+
+.review-icon i{
+    color: yellow;
+ }
+
+.card .image-3{
+    height: 45px;
+}
+
+.card .image-4{
+    height: 56px;
+} 
+
+/* the styling for the review div closes here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -594,24 +715,26 @@
 
 
 
+/* styling for the embed stories starts here */
 
 
-
-
-
-.secten{
+.embed-stories{
     min-height: 40vh;
     max-width: 100%;
     background-color: #eef1f3;
-    padding: 2em;
+}
+
+.content-embed{
+    /* background-color: pink; */
+   min-height: 30vh;
 }
 
 .monthly{
     background-color: white;
-    width: 220px;
+    width: 240px;
     min-height: 50px;
-    padding: 0.2em;
-    box-shadow: rgba(99, 99, 99, 0.473) 0px 2px 8px 0px;
+    padding: 0.3em;
+    box-shadow: rgba(95, 92, 92, 0.473) 0px 2px 8px 0px;
     border-radius: 3px;
     color: #979595;
     margin: 0 auto;
@@ -622,54 +745,68 @@
     border: none;
     outline: none;
     height: 48px;
-    width: 150px;
+    width: 160px;
     border-radius: 4px;
     background-color: black;
     color: white;
+    font-weight: bold;
     
 }
 
-.sec10card{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1em;
+.monthly:hover{
+    background-color: blue;
+    color: white;
 }
 
-.s10card1{
+.embed-cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.embed-card1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: rgb(255, 255, 255);
     min-height:400px ;
     width: 240px;
     border-radius: 7px;
     box-shadow: rgba(99, 99, 99, 0.473) 0px 2px 8px 0px;
     padding: 0.2em;
-    /* visibility:hidden; */
 }
 
-
-.zero{
-    margin-left: 1.2em;
+.pro{
+    visibility: hidden;
     color: white;
-    margin-bottom: 0.5em;
-    
-
+    text-align: center;
 }
 
-.incard{
-    height: 375px;
+.card-story-cont{
+    width: 230px;
+    height: 380px;
     border-radius: 0 0 3px 3px;
-    background-color: rgb(255, 255, 255);
-    margin-top: 0.6em;
+    background-color: rgb(255, 255, 255); 
     padding: 0.3em;
 }
 
 
-.s10card1:hover{
+.embed-card1:hover .pro{
 
+visibility: visible;
 background-color: blue;
+font-weight: bold;
+}
+.embed-card1:hover{
+    background-color: blue;
+    border-radius: 7px;
 }
 
-.blue{
+.embed-card1:hover .incard{
+    border-radius: 0;
+}
+
+.embed-button{
     border: 2px solid blue;
     border-radius: 3px;
     outline: none;
@@ -678,97 +815,43 @@ background-color: blue;
     color: rgb(0, 64, 255);
     height: 35px;
     width: 180px;
-    margin-bottom: 1em;
+   
+    margin: 0 auto;
 }
 
-.blue:hover{
+.embed-button:hover{
+    box-shadow: 2px 2px rgb(8, 124, 206);
     background-color: rgb(0, 64, 255);
     color: #ffffff;
     border: none;
 }
 
-.list2{
+.list-embed{
     list-style-type: none;
     font-size: small;
     margin-left: -2em;
     line-height: 2em;
-
 }
 
-.deco{
+.deco-card{
     text-decoration: underline;
-    font-weight: bold;
 }
 
-.thro{
+.through{
     text-decoration: line-through;
     color: #979595;
 }
 
-/* ......10..... */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* the styling for the review div starts here */
-
-.review{
-    max-width: 100%;
-    min-height: 70vh;
-    /* background-color: pink; */
+.deco-embed:hover{
+    text-decoration: underline;
+    font-weight: bold;
 }
 
-.review-icon{
-   display: flex;
-   margin-top: 2px;
-   margin-bottom: 2px;
+.card-left{
+    margin-left: 0.5px;
 }
 
-.review-icon i{
-    color: yellow;
- }
-
-.card .image-3{
-    height: 45px;
-}
-
-.card .image-4{
-    height: 56px;
-} 
-
-
-
-
-
-
-
-
-
+/* styling for the embed stories ends here */
 
 
 
@@ -866,79 +949,7 @@ min-height: 5vh;
 
 
 
-/* styling for the integration */
-.integrations {
-    margin-top: 4%;
-    max-width: 100%;
-    min-height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 4%;
-    border-radius: 5px;
-}
-
-.section {
-    max-width: 100%;
-    background-color: #EEF1F7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cont {
-    width: 40%;
-}
-
-.cont h1 {
-    margin-top: 1em;
-}
-
-.list {
-    text-transform: capitalize;
-    margin-top: 20px;
-    list-style: none;
-    padding-left: 0;
-}
-
-.check {
-    padding-right: 10px;
-}
-
-/* media quesries for integration */
-@media only screen and (max-width: 1000px) {
-
-    .section {
-        flex-direction: column;
-        height: auto;
-        padding: 40px 0;
-        text-align: center;
-    }
-
-    .section .cont {
-        width: 60%;
-    }
-}
-
-@media only screen and (max-width:545px){
-    .banner img{
-        width: 450px;
-    }
-}
-
-@media only screen and (max-width:455px){
-    .banner img{
-        width: 400px;
-    }
-}
-
-@media only screen and (max-width:400px){
-    .banner img{
-        width: 300px;
-    }
-}
-
-/* media queries for integration closes here */
+ 
 
 footer{
     max-width: 100%;
