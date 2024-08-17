@@ -1,0 +1,1081 @@
+/* universal styling */
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* styling for the main container */
+.main-container{
+    min-width: 300px;
+    max-width: 1400px;
+    min-height: 1000px;
+}
+
+/* STYLING FOR THE HOME CONTAINER STARTS HERE */
+
+ /* styling for the navbar */
+.home-section nav{
+    background-color: #E5E5E5 !important;
+}
+
+.navbar-brand img{
+    width: 8%;
+    height: 12%;
+    mix-blend-mode: color-burn;
+   /* object-fit: contain; */
+}
+
+.navbar-collapse a:hover{
+    color: blue !important;
+}
+/* the styling for the navbar ends here */
+
+ .hero-section{
+    max-width: 1400px;
+    min-height: 70vh;
+    background-color: gainsboro; 
+    margin-top: 0.2%; 
+    display: flex;
+}  
+/* styling for hero text section */
+.hero-text{
+    width: 50%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-control{
+ border-width: 3px !important;
+} 
+
+.input-group{
+    margin-right: 5%;
+}
+
+.hero-list ul{
+    display:flex;
+    column-gap: 2em;
+}
+
+/* styling for hero images section */
+.hero-images{
+ width: 50%;
+ min-height: 60vh;
+ display: flex;
+}
+ .hero-images .image1{
+    width: 140px;
+    margin-top: 8%;
+    margin-left: 35%;
+    filter: drop-shadow(1px 1px 1px gray);
+} 
+
+.hero-images .hero-image2{
+ width: 200px;
+ margin-left: 35%;
+ margin-top: 1.5%;
+ filter: drop-shadow(1px 1px 1px yellow);
+ border-radius: 4px;
+}
+
+.hero-images .hero-image3{
+    margin-top: 8%;
+    width: 140px;
+    filter: drop-shadow(1px 1px 1px orange);
+    display: inline-block;
+ }
+
+.hero-images .hero-image4{
+    width: 140px;
+    filter: drop-shadow(1px 1px 1px gray);
+    border-radius: 4px;
+    margin-top: 2%;
+} 
+
+.hero-images .image6 {
+   display: none;
+}
+
+ .hero-imageA{
+    width: 50%;
+}  
+
+ .hero-imageB{
+    width: 50%;
+ } 
+.home-footer{
+    height: 140px;
+    max-width: 100%;
+    background-color: gainsboro; 
+}
+.home-footer img{
+    margin-left: 10%;
+    filter: brightness(60%);
+}
+
+/* media queries for the complete home section starts here */
+
+@media only screen and (max-width:1235px){
+    .hero-images .hero-image2{
+        margin-left: 30%;
+       }
+}
+
+@media only screen and (max-width:1165px){
+    .hero-images .hero-image2{
+        margin-left: 25%;
+       }
+}
+
+@media only screen and (max-width:1100px){
+    .hero-images .hero-image2{
+        margin-left: 20%;
+       }
+
+       .home-footer img{
+        margin-left: 6%;
+    }
+}
+
+@media only screen and (max-width:1030px){
+    .hero-images .hero-image2{
+        margin-left: 15%;
+       }
+
+       .home-footer img{
+        margin-left: 4%;
+    }
+    .hero-text .hero-text2{
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width:950px){
+    .hero-images .hero-image2{
+        margin-left: 10%;
+       }
+
+       .home-footer img{
+        margin-left: 2%;
+    }
+
+   .hero-text h1{
+    font-size: 30px;
+   }
+}
+
+@media only screen and (max-width:910px){
+    .hero-images .hero-image2{
+        margin-left: 5%;
+       }
+
+       .home-footer img{
+       width: 90%;
+    }
+    .hero-text .hero-text2{
+        margin-left: 5%;
+    }
+}
+
+
+@media only screen and (max-width:850px){
+    .hero-images .hero-image3{
+        margin-left: 2%;
+       }
+
+       .hero-imageB{
+        margin-left: 5%;
+       } 
+
+    
+    .hero-text .hero-text2{
+        margin-left: 3%;
+    }
+
+    .hero-list ul{
+      flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:795px){
+    .hero-text h1{
+        font-size: 27px;
+       }
+     .btn-outline-secondary{
+       width: 40%;
+     }  
+     .hero-imageB{
+        margin-left: 8%;
+       } 
+}
+
+@media only screen and (max-width:735px){
+    .hero-section{
+        flex-direction: column;
+    }
+    .hero-text{
+       width:100% ;
+    }
+
+    .hero-images{
+        width: 100%;
+    }
+
+    .hero-text h1{
+        font-size: 2.5em;
+       }
+
+       .hero-list ul{
+        flex-direction: row;
+      } 
+      
+      .hero-images .hero-image2 {
+        margin-left: 50%;
+      }
+      .hero-images .image1 {
+        margin-left: 55%;
+        margin-bottom: 1%;
+      }
+
+     .hero-images .image6 {
+        display: inline;
+        width: 70%;
+        margin-left: 45%;
+        border-radius: 3px;
+     }
+}
+
+@media only screen and (max-width:535px){
+    .hero-text h1{
+        font-size: 28px;
+    }
+
+    .hero-images .hero-image2 {
+        margin-left:27%
+      }
+}
+
+@media only screen and (max-width:490px){
+    .hero-images .hero-image2 {
+        margin-left:18%
+      }
+}
+
+@media only screen and (max-width:445px){
+    .hero-images .hero-image2 {
+        margin-left:12%
+      }
+
+      .hero-list ul{
+        flex-direction: column;
+      } 
+      .hero-images .image1 {
+        margin-left: 45%;;
+      }
+
+      .btn{
+        width: 160px;
+        max-height: 80px;
+      }
+}
+
+@media only screen and (max-width:422px){
+    .btn{
+        width: 160px;
+        max-height: 80px;
+      }
+
+}
+
+@media only screen and (max-width:415px){
+    .btn{
+        display: none;
+    }
+
+    .hero-images .hero-image2{
+        width: 180px;
+       }
+}
+
+@media only screen and (max-width:370px){
+
+    .hero-text h1{
+        font-size: 25px;
+    }
+    .hero-images .image6 {
+        margin-left: 35%;
+    
+     }
+
+     .hero-images .image1 {
+        margin-left: 25%;
+      }
+
+      .hero-images .hero-image2{
+        width: 140px;
+       }
+
+       
+.hero-images .hero-image3{
+    width: 120px;
+ }
+
+.hero-images .hero-image4{
+    width: 120px;
+} 
+}
+@media only screen and (max-width:335px){
+
+        .hero-text h1{
+            font-size: 20px;
+        }
+}
+/* the media queries for the home section ends here */
+
+
+
+
+/* the styling for the social apps section starts here */
+.socail-apps{
+   
+    max-width: 100%;
+    min-height: 75vh;
+    background-color: #E6E6E6;
+    margin-top: 2%;
+}
+
+.story{
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.story1 , .story2{
+    text-align: center;
+}
+
+.apps-list{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+}
+
+.card-img-top{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   text-shadow: 1px 1px palevioletred;
+}
+
+.card-body p , h6 {
+    text-align: center;
+}
+
+.card-title{
+    margin-bottom: 0;
+}
+
+.icon{
+    color: blue;
+    font-size: 2.5em;
+    margin-top: 8%;
+    text-shadow: 1px 1px lightblue;
+}
+
+.card i{
+    text-align: center; 
+                width: 100%; 
+}
+
+.fa-tiktok{
+    color: black;
+    text-shadow: 1px 1px red;
+}
+
+.card{
+    box-shadow: 2px 2px lightslategray;
+    margin-bottom: 1%;
+ 
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.card{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.socail-apps .card-text{
+    text-align: center !important;
+}
+
+/* the styling for the social app section closes here */
+
+
+
+
+/* the styling for the container div starts here */
+.conversions{
+        max-width: 100%;
+        min-height: 80vh;
+        /* background-color: palevioletred; */
+}
+
+
+.card2{
+    width: 20rem;
+    background-color: #E6E6E6;
+}
+
+.conversions img{
+    margin-left: 40%;
+    width: 5%;
+}
+/*the styling for the conversion div closes here  */
+
+
+/* the styling for the template section div starts here */
+.template-section{
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: rgb(34, 34, 57);
+}
+
+.temp .card-img-top{
+    
+    margin: 0% !important;
+    width: 100%;
+}
+
+
+.card-text{
+    text-align:start!important;
+}
+
+/* styling for the features services starts here */
+
+.features-services{
+    max-width: 100%;
+    min-height: 70vh;
+    /* background-color: lightcoral; */
+}
+
+
+
+.card img{
+    width: 35px;
+    margin-left: 4% !important;
+    margin-top: 4% !important;
+}
+
+/* styling for the feature services closes here */
+
+
+
+/* styling for video section starts here */
+
+.seceight{
+    max-width: 100%;
+    min-height: 35vh;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.sec8part1{
+      max-width: 100%;
+      height: 100%;
+      background-color: #0c0c1c;
+      border-radius: 7px;
+      color: #ffffff;
+      padding: 0.7em;
+      display: flex;
+      justify-content: space-between;
+}
+
+.sec8part2{
+    width: 50%;
+    
+}
+
+.video{
+    width: 400px;
+    height: 300px;
+    margin-left: 2em;
+}
+
+.headi{
+    margin-top:1.6em ;
+    margin-left: 2em;
+}
+
+@media only screen and (max-width:966px){
+    .video{
+        width: 400px;
+        height: 250px;
+        margin-left: 1em;
+    }
+}
+
+@media only screen and (max-width:920px){
+    .video{
+        width: 350px;
+        margin-left: 1em;
+    }
+}
+
+@media only screen and (max-width:825px){
+    .video{
+        width: 300px;
+        margin-left: 1em;
+    }
+}
+
+@media only screen and (max-width:725px){
+    .sec8part1{
+        flex-direction: column;
+    }
+
+    .video{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sec8part2{
+        width: 100%;
+        
+    }
+    
+}
+
+/* media quesries for the video section ends here */
+
+
+
+
+
+
+@media only screen and (max-width:340px){
+    .card2{
+        width: 15rem;
+    }
+    .navbar-nav{
+    width: 50px !important;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .btn{
+        width: 200px !important;
+    }
+
+    .container-xxl{
+        width: 100px !important;
+        margin: 2px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.secten{
+    min-height: 40vh;
+    max-width: 100%;
+    background-color: #eef1f3;
+    padding: 2em;
+}
+
+.monthly{
+    background-color: white;
+    width: 220px;
+    min-height: 50px;
+    padding: 0.2em;
+    box-shadow: rgba(99, 99, 99, 0.473) 0px 2px 8px 0px;
+    border-radius: 3px;
+    color: #979595;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.save{
+    border: none;
+    outline: none;
+    height: 48px;
+    width: 150px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    
+}
+
+.sec10card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.s10card1{
+    background-color: rgb(255, 255, 255);
+    min-height:400px ;
+    width: 240px;
+    border-radius: 7px;
+    box-shadow: rgba(99, 99, 99, 0.473) 0px 2px 8px 0px;
+    padding: 0.2em;
+    /* visibility:hidden; */
+}
+
+
+.zero{
+    margin-left: 1.2em;
+    color: white;
+    margin-bottom: 0.5em;
+    
+
+}
+
+.incard{
+    height: 375px;
+    border-radius: 0 0 3px 3px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0.6em;
+    padding: 0.3em;
+}
+
+
+.s10card1:hover{
+
+background-color: blue;
+}
+
+.blue{
+    border: 2px solid blue;
+    border-radius: 3px;
+    outline: none;
+    background-color: #ffffff;
+    margin-left: 1.5em;
+    color: rgb(0, 64, 255);
+    height: 35px;
+    width: 180px;
+    margin-bottom: 1em;
+}
+
+.blue:hover{
+    background-color: rgb(0, 64, 255);
+    color: #ffffff;
+    border: none;
+}
+
+.list2{
+    list-style-type: none;
+    font-size: small;
+    margin-left: -2em;
+    line-height: 2em;
+
+}
+
+.deco{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.thro{
+    text-decoration: line-through;
+    color: #979595;
+}
+
+/* ......10..... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* the styling for the review div starts here */
+
+.review{
+    max-width: 100%;
+    min-height: 70vh;
+    /* background-color: pink; */
+}
+
+.review-icon{
+   display: flex;
+   margin-top: 2px;
+   margin-bottom: 2px;
+}
+
+.review-icon i{
+    color: yellow;
+ }
+
+.card .image-3{
+    height: 45px;
+}
+
+.card .image-4{
+    height: 56px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.questions-section{
+    width: 100%;
+    min-height: 80vh;
+    background-color: #eef1f3;
+}
+
+
+
+  /* Faq Section */
+  .faqsSection{
+    margin: auto;
+   max-width: 50%;
+   /* min-height: 80vh; */
+   background-color: #eef1f3;
+/* background-color: paleturquoise; */
+  }
+  .faqsSection h2 {
+    padding-top: 3%;
+    text-align: center;
+  }
+
+  .faqsSection h5{
+    text-align: center;
+  }
+ .faqs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .ans{
+min-height: 5vh;
+    /* width: 100%; */
+    /* box-shadow: rgba(1, 92, 87, 0.527) 0px 3px 8px; */
+    /* border-radius: 20px; */
+    padding: 2em;}
+  
+  .faq{
+    border-bottom: groove;
+    /* width: 50%; */
+    /* box-shadow: rgba(1, 92, 87, 0.527) 0px 3px 8px; */
+    /* border-radius: 20px; */
+    padding: 1em;
+  }
+  
+  .ans {
+  padding: 0;
+  background-color: blue;
+  /* background: palevioletred; */
+  overflow: hidden;
+  opacity: 0;
+  margin: 0; 
+  max-height: 0;
+  transition: opacity 0.2s ease, max-height 0.2s ease, margin 0.2s ease;
+  
+  }
+  
+  .faq:hover {
+    box-shadow: none;
+    text-align: center;
+  
+  }
+  
+  
+  .faq:hover .ans {
+    opacity: 1;
+  max-height: 200px; 
+  margin: 1em 0;
+  padding: 1em;
+  color: white;
+  }
+
+
+
+
+/* styling for the integration */
+.integrations {
+    margin-top: 4%;
+    max-width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
+    border-radius: 5px;
+}
+
+.section {
+    max-width: 100%;
+    background-color: #EEF1F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    width: 40%;
+}
+
+.cont h1 {
+    margin-top: 1em;
+}
+
+.list {
+    text-transform: capitalize;
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.check {
+    padding-right: 10px;
+}
+
+/* media quesries for integration */
+@media only screen and (max-width: 1000px) {
+
+    .section {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .section .cont {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:545px){
+    .banner img{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width:455px){
+    .banner img{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .banner img{
+        width: 300px;
+    }
+}
+
+/* media queries for integration closes here */
+
+footer{
+    max-width: 100%;
+    min-height: 40vh;
+    background-color: rgb(12, 12, 28);
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    gap: 2em;
+}
+
+.footlogo{
+    height: 40px;
+    width: 40px;
+    
+}
+
+.lorem{
+    margin-top: 1em;
+}
+
+.footerlist{
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+
+
+
+.press{
+    margin-left: -2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quiries */
+
+
+
+    
+    @media (max-width:980px){
+    
+       footer{
+        display: block;
+       }
+    }
+      
+    
+    @media (max-width:500px){
+       .part1{
+            margin-left: -2em;
+        }
+        .part-2{
+            display: block;
+        }
+    
+    
+        .img-1, .img-2{
+            margin-left: 3em;
+        }
+    
+    
+        .pump, .ava{
+            width: 270px;
+            height: 350px;
+            margin-left: 3em;
+        }
+    
+        .sec5card{
+            max-width:100% ;
+            margin: 1em;
+        }
+    
+        .new2{
+            margin-top: 1em;
+        }
+    
+        .video{
+            height: 200px;
+        }
+    
+        .drop1{
+            min-width: 200px;
+            margin-left: -2em;
+        }
+    
+        .dropcon{
+            height: 130px;
+            margin-bottom: 2em;
+            width: 205px;
+            
+        }
+       
+    
+    }
+    
+    @media (max-width:410px){
+    
+          .pump, .ava, .img-1, .img-2{
+            margin-left: -1em;
+          }
+    
+        .input{
+            width: 260px;
+        }
+    
+        .input-field{
+            width: 130px;
+        }
+    
+        .sec5card{
+            max-width: 90%;
+            margin: 2em;
+        }
+    
+    
+        .logoimg1{
+            width: 100px;
+        }
+    
+        .newimg{
+            margin-left: 2em;
+    
+        }
+    
+    }
